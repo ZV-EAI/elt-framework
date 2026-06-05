@@ -44,7 +44,7 @@ jobs:
               /p:IgnorePostDeployScript=false
               /p:AllowIncompatiblePlatform=true
               /p:ExcludeObjectTypes=Logins;Users
-
+            skip-firewall-check: true
         - name: Azure Logout
           run: |
             az logout
